@@ -1,4 +1,4 @@
-dir = '/home/aol/'
+dir <- "/home/aol/""
 setwd(dir)
 library(tm)
 library(topicmodels)
