@@ -103,6 +103,7 @@ ldaOut <-LDA(dtm.new,15, method='Gibbs', control=list(nstart=nstart, seed = seed
 
 # library(lda)
 # ldaOut2<-lda.collapsed.gibbs.sampler(docs,K = 10,num.iterations = 20,compute.log.likelihood = TRUE)
+## Results ##
 transP<-ldaOut@gamma
 rownames(transP)<-1:nrow(transP)
 transP<-as.data.frame(transP)
