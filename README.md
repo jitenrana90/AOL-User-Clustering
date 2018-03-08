@@ -29,7 +29,10 @@ The aim is to identify following things:
   b. Cluster the users with similar interests
 
 # Approach for clustering :
-a. Employed Latent Dirichlet Allocation (LDA) to discover latent topics prevalent in search queries \n
-b. Model Topics as distribution over search keywords
-c. Identify Topics Users are intested in
-d. Cluster users with similar interests with Jensen-Shannon Divergence (JSD) as a distance metrics between users
+  a. Employed Latent Dirichlet Allocation (LDA) to discover latent topics prevalent in search queries
+
+  b. Model Topics as distribution over search keywords
+
+  c. Identify Topics Users are intested in
+
+  d. Cluster users with similar interests with Jensen-Shannon Divergence (JSD) as a distance metrics between users
