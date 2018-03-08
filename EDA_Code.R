@@ -1,4 +1,4 @@
-setwd(dir = 'Desktop/Co Laptop/Analytics Exercises/C1X/')
+setwd(dir = '/home/aol')
 library(stringr)
 library(sqldf)
 library(caret)
