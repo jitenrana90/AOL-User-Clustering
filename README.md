@@ -24,6 +24,7 @@ It extracts the following high level insights at two levels (query level and use
 # User Clustering based on Search Queries:
 The code for this part is in the file Clustering_Code.R
 The aim is to identify following things:
+ 
   a. User Interest Vector
   
   b. Cluster the users with similar interests
