@@ -7,12 +7,17 @@ library(lsr)
 library(entropy)
 library(infotheo)
 
-load('w8.RData')
+#load('w8.RData')
+###################### Reading the DataSet #################
+data <- read.csv(file = 'user-ct-test-collection-02.csv', header = TRUE, sep = '\t')
+data$index1<-1:nrow(data)
+data$QueryTime<-as.POSIXct(data$QueryTime)
+save(data, file = 'data.Rda')
 
-data2<-data
-data2$Query<-as.character(data2$Query)
-data2<-data2[nchar(data2$Query) > 1,]
-result<-aggregate(Query ~ AnonID, data = data2, unique, collapse = ' ')
+#data2<-data
+data$Query<-as.character(data$Query)
+data<-data[nchar(data$Query) > 1,]
+result<-aggregate(Query ~ AnonID, data = data, unique, collapse = ' ')
 r<-result
 
 concat<-function(str){
