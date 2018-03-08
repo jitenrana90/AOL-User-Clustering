@@ -9,7 +9,9 @@ The code for this part is in the file EDA_Code.R
 It extracts the following high level insights at two levels (query level and user level)
 # At User Level:
 a. Extract average click rate
+
 b. Average no of queries per user
+
 c. Average session duration of a user
 d. Average No of page view by a User
 
